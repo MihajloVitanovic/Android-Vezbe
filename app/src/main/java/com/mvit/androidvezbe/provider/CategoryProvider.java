@@ -23,9 +23,9 @@ public class CategoryProvider {
 
     public static List<String> getCategoryNames() {
         List<String> names = new ArrayList<>();
-        names.add("Predjela1");
-        names.add("Glavna jela2");
-        names.add("Dezerti3");
+        names.add("Predjela");
+        names.add("Glavna jela");
+        names.add("Dezerti");
         return names;
     }
 

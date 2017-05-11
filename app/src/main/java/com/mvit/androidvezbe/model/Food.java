@@ -20,23 +20,23 @@ public class Food {
     private double price;
     private float calories;
 
-    String priceString = Double.toString(price);
-    String caloriesString = Float.toString(calories);
+    //String priceString = Double.toString(price);
+    //String caloriesString = Float.toString(calories);
 
 
     public Food(){}
 
-    public Food(int id, String caloriesString, String image, String name, String description, Category category, Ingredient ingredient, String spinner, String priceString) {
+    public Food(int id, float calories, String image, String name, String description, Category category, Ingredient ingredient, String spinner, double price) {
         this.id = id;
         this.calories = calories;
-        this.caloriesString = caloriesString;
+        //this.caloriesString = caloriesString;
+        //this.priceString = priceString;
         this.image = image;
         this.name = name;
         this.description = description;
         this.category = category;
         this.ingredient = ingredient;
         this.spinner = spinner;
-        this.priceString = priceString;
         this.price = price;
     }
 
@@ -104,13 +104,13 @@ public class Food {
         this.price = price;
     }
 
-    public String getPriceString() {
+    /*public String getPriceString() {
         return priceString;
-    }
+    }*/
 
-    public void setPriceString(String priceString) {
+    /*public void setPriceString(String priceString) {
         this.priceString = priceString;
-    }
+    }*/
 
     public float getCalories() {
         return calories;
@@ -120,13 +120,13 @@ public class Food {
         this.calories = calories;
     }
 
-    public String getCaloriesString() {
+    /*public String getCaloriesString() {
         return caloriesString;
-    }
+    }*/
 
-    public void setCaloriesString(String caloriesString) {
+    /*public void setCaloriesString(String caloriesString) {
         this.caloriesString = caloriesString;
-    }
+    }*/
 
     @Override
     public String toString() {
@@ -138,8 +138,8 @@ public class Food {
                 ", category='" + category + '\'' +
                 ", ingredient='" + ingredient + '\'' +
                 ", spinner='" + spinner + '\'' +
-                ", price=" + priceString +
-                ", calories=" + caloriesString +
+                ", price=" + price +
+                ", calories=" + calories +
                 '}';
     }
 

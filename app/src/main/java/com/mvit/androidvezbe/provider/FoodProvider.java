@@ -32,29 +32,29 @@ public class FoodProvider {
 
     public static List<String> getFoodNames() {
         List<String> names = new ArrayList<>();
-        names.add("ImeZaPrviActivity111");
-        names.add("ImeZaPrviActivity222");
-        names.add("ImeZaPrviActivity333");
+        names.add("Corba");
+        names.add("Becka snicla");
+        names.add("Vocni kup");
         return names;
     }
 
     public static Food getFoodById(int id) {
 
-        Category predjela = new Category(0, "Predjela");
-        Category glavnajela = new Category(1, "Glavna jela");
-        Category dezerti = new Category(2, "Dezerti");
+        Category predjela = new Category(0, "Predjela1");
+        Category glavnajela = new Category(1, "Glavna jela1");
+        Category dezerti = new Category(2, "Dezerti1");
 
-        Ingredient so = new Ingredient(0, "So");
-        Ingredient biber = new Ingredient(1, "Biber");
-        Ingredient ulje = new Ingredient(2, "Ulje");
+        Ingredient so = new Ingredient(0, "So1");
+        Ingredient biber = new Ingredient(1, "Biber1");
+        Ingredient ulje = new Ingredient(2, "Ulje1");
 
         switch (id) {
             case 0:
-                return new Food(0, "120", "apples.jpg", "name11", "desc", predjela, so, "spin", "150.00");
+                return new Food(0, 200.0f, "corba.jpg", "Corba", "Супа је течно јело, које се справља прокувавањем састојака.", predjela, so, "spin", 150.00);
             case 1:
-                return new Food(0, "120", "apples.jpg", "name22", "desc", glavnajela, biber, "spin", "150.00");
+                return new Food(0, 200.0f, "apples.jpg", "Becka snicla", "desc", glavnajela, biber, "spin", 150.00);
             case 2:
-                return new Food(0, "120", "apples.jpg", "name33", "desc", dezerti, ulje, "spin", "150.00");
+                return new Food(0, 200.0f, "apples.jpg", "Vocni kup", "desc", dezerti, ulje, "spin", 150.00);
             default:
                 return null;
         }

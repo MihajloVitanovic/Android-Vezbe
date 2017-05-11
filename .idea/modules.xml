@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidVezbe.iml" filepath="$PROJECT_DIR$/AndroidVezbe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Vezbe.iml" filepath="$PROJECT_DIR$/Android-Vezbe.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -31,7 +31,7 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_second_relative);
 
         // Loads an URL into the WebView
         final int position = getIntent().getIntExtra("position", 0);
@@ -66,11 +66,11 @@ public class SecondActivity extends Activity {
 
         // Finds "tv_price" TextView and sets "text" property
         TextView tvPrice = (TextView) findViewById(R.id.tv_price);
-        tvPrice.setText(FoodProvider.getFoodById(position).getPriceString() + " cena");
+        tvPrice.setText(FoodProvider.getFoodById(position).getPrice() + " cena");
 
         // Finds "tv_calories" TextView and sets "text" property
         TextView tvCalories = (TextView) findViewById(R.id.tv_calories);
-        tvCalories.setText(FoodProvider.getFoodById(position).getCaloriesString() + " ukupno kalorija");
+        tvCalories.setText(FoodProvider.getFoodById(position).getCalories() + " ukupno kalorija");
 
         // Finds "sp_category" Spinner and sets "selection" property
         Spinner category = (Spinner) findViewById(R.id.sp_category);
