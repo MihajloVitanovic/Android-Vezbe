@@ -11,6 +11,7 @@ import java.util.List;
 
 public class CategoryProvider {
 
+    /*
     public static List<Category> getCategories(){
         List<Category> categories = new ArrayList<>();
         categories.add(new Category(0, "Predjela"));
@@ -18,15 +19,17 @@ public class CategoryProvider {
         categories.add(new Category(2, "Dezerti"));
         return categories;
     }
+    */
 
     public static List<String> getCategoryNames() {
         List<String> names = new ArrayList<>();
-        names.add("Predjela");
-        names.add("Glavna jela");
-        names.add("Dezerti");
+        names.add("Predjela1");
+        names.add("Glavna jela2");
+        names.add("Dezerti3");
         return names;
     }
 
+    /*
     public static Category getCategoryById(int id) {
         switch (id) {
             case 0:
@@ -39,5 +42,5 @@ public class CategoryProvider {
                 return null;
         }
     }
-
+    */
 }

@@ -21,7 +21,25 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //TODO:Dodati ostatak koda, napraviti list_item.xml
+        // Loads food from array resource
+        final List<String> foodNames = FoodProvider.getFoodNames();
+
+        // Creates an ArrayAdaptar from the array of String
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foodNames);
+        ListView listView = (ListView) findViewById(R.id.lista_jela);
+
+        // Assigns ArrayAdaptar to ListView
+        listView.setAdapter(dataAdapter);
+
+        // Starts the SecondActivity and sends it the selected URL as an extra data
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
