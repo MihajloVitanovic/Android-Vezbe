@@ -16,10 +16,6 @@
         </activity>
 
         <!-- Declares 2nd activity -->
-        <activity
-            android:name=".activities.SecondActivity"
-            android:icon="@mipmap/ic_launcher">
-        </activity>
 
 
     </application>
